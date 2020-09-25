@@ -1,5 +1,5 @@
 # StreamVR-2.0-Tutorial  
-**VSTEAM VR - The Ultimate VR developer guide PART 1**   
+**STEAM VR - The Ultimate VR developer guide PART 1**   
 https://www.youtube.com/watch?v=5C6zr4Q5AlA&t=398s  
   
 - 1:11 - Steam VR Setup 
@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=5C6zr4Q5AlA&t=398s
 - 11:04 - Input System  
 - 14:27 - Joystick Movement 
   
-**VSTEAM VR - The Ultimate VR developer guide PART 2**   
+**STEAM VR - The Ultimate VR developer guide PART 2**   
 https://www.youtube.com/watch?v=MKOc8J877tI  
 - 0:37 - Interactable Object  
 - 6:05 - Throwable Objects  
