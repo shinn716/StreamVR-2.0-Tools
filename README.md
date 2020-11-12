@@ -15,7 +15,44 @@ https://www.youtube.com/watch?v=MKOc8J877tI
 - 9:41 - Snap Object with Handgun 
 - 11:45 - Using Grabbed Object / Shooting with the handgun  
 - 14:43 - Custom Hand Pose  
+  
+  
 
+***
+
+**SteamVR Action - Sample Code**  
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Valve.VR;
+
+public class VIVEInput : MonoBehaviour
+{
+    public SteamVR_Behaviour_Pose trackedObject;
+    public SteamVR_Action_Boolean grabPinchAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabPinch");
+    public SteamVR_Action_Boolean grabGripAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabGrip");
+    public SteamVR_Action_Vibration hapticAction = SteamVR_Input.GetAction<SteamVR_Action_Vibration>("Haptic");
+    public SteamVR_Action_Boolean uiInteractAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("InteractUI");
+    public SteamVR_Action_Vector2 touchpadAction = SteamVR_Actions.default_Touchpadpos;
+    public SteamVR_Action_Boolean menu = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("Menu");
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        if (menu.GetStateDown(SteamVR_Input_Sources.RightHand))
+        {
+            print("Menu clicked");
+        }
+        print("touchPad: " + touchpadAction.GetLastAxis(SteamVR_Input_Sources.RightHand));
+    }
+}
+```
 
 
 **Source:**  
